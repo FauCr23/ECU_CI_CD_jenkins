@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/DaniRuan/CI-CD_Pipeline.git'
+                git branch: 'main', url: 'https://github.com/FauCr23/ECU_CI_CD_jenkins.git'
             }
         }
         stage('Build') {
@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'pio test -d, --project-dir C:\\Users\\danny\\OneDrive\\Documents\\EDAG\\Codes\\Test_hardware'
+                bat 'pio test -d, --project-dir C:\\Users\\faust\\Documents\\PlatformIO\\Projects\\Test_Gateway'
             }
         }
     }

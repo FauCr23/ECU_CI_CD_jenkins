@@ -18,7 +18,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'pio test -d, --project-dir C:\\Users\\faust\\Documents\\PlatformIO\\Projects\\Test_Gateway'
+                bat 'pio test -vvv 
+                //-d, --project-dir C:\\Users\\faust\\Documents\\PlatformIO\\Projects\\Test_Gateway'
             }
         }
     }
